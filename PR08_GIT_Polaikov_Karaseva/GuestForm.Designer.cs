@@ -31,6 +31,7 @@ namespace PR08_GIT_Polaikov_Karaseva
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GuestForm));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,16 +43,28 @@ namespace PR08_GIT_Polaikov_Karaseva
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(800, 319);
+            this.dataGridView1.Size = new System.Drawing.Size(700, 299);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Chartreuse;
+            this.button1.Location = new System.Drawing.Point(480, 333);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(184, 47);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "На главную";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // GuestForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(700, 422);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GuestForm";
             this.Text = "ПР08 Удалённые ветки";
@@ -63,5 +76,6 @@ namespace PR08_GIT_Polaikov_Karaseva
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
     }
 }
